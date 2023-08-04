@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-9</title>
+    <style>
+        body {
+            padding-top: 50px;
+            justify-content: center;
+            display: flex;
+        }
+
+        input,
+        button {
+            margin-top: 5px;
+        }
+
+        input {
+            height: 10px;
+            width: 300px;
+            border-radius: 25px;
+            padding: 20px;
+        }
+
+        button {
+            background-color: aquamarine;
+            height: 50px;
+            width: 340px;
+            border-radius: 25px;
+        }
+
+        span {
+            width: 500px;
+        }
+
+        #email {margin-top: 50px;}
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <span>შექმენით ორი ცალი input ელემენტი სადაც მომხმარებელი <br> შეიყვანს ელ. ფოსტასა და პაროლს
+            და ღილაკზე დაკლიკების <br> შემთხვევაში მოხდეს ჩაწერილი მონაცემების გასუფთავება </span>
+        <form id="inputs">
+            <input type="email" placeholder="ელ. ფოსტა" id="email">
+            <br>
+            <input type="password" placeholder="პაროლი" id="password">
+        </form>
+        <button onclick="shemowmeba()">წაშლა</button>
+    </div>
+
+    <script>
+        function shemowmeba() {
+            var x = document.getElementById("inputs").reset();
+            var text = document.getElementById("txt");
+        }
+    </script>
+</body>
+
+</html>
